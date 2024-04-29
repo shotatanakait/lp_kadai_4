@@ -26,6 +26,9 @@ a:hover {
   cursor: pointer;
   opacity: 0.5;
 }
+input, select {
+  outline: none;
+}
 
 /* header */
 header {
@@ -170,6 +173,63 @@ header {
 }
 .serviceDescriptionText.active {
   display: block;
+}
+
+/* contact */
+.contactSection {
+  margin: 6.4rem 2rem;
+}
+.contactSectionTitle {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+/* contactForm */
+.required {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+.optional {
+  color: #999;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+.contactForm {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contactFormGroup {
+  width: 100%;
+}
+.contactFormLabel {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.contactFormInput {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 4px;
+  border: 1px solid #999;
+  font-size: 1.6rem;
+}
+.contactFormSelect {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 4px;
+  border: 1px solid #999;
+  font-size: 1.6rem;
+}
+.contactFormSubmit {
+  padding: 8px 4px;
+  border: 1px solid #999;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
 
 /* thanks */

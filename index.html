@@ -63,6 +63,41 @@
                 <p id="serviceDescriptionText3" class="serviceDescriptionText">スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発 スマホアプリ開発</p>
             </div>
         </section>
+
+        <!-- contact -->
+        <section class="contactSection">
+            <h1 class="contactSectionTitle">お問い合わせ</h1>
+            <form action="./thanks.html" class="contactForm">
+                <div class="formGroup">
+                    <label for="contactFormName" class="contactFormLabel">お名前<span class="required">*必須</span></label>
+                    <input name="name" id="contactFormName" type="text" class="contactFormInput" placeholder="例)田中 太郎" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormPrefecture" class="contactFormLabel">お住まいの都道府県<span class="required">*必須</span></label>
+                    <select name="prefecture" id="contactFormPrefecture" class="contactFormSelect">
+                        <option value="" selected disabled>---</option>
+                        <option value="北海道">北海道</option>
+                        <option value="青森県">青森県</option>
+                        <option value="岩手県">岩手県</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormCity" class="contactFormLabel">お住まいの市区町村<span class="required">*必須</span></label>
+                    <select name="city" id="contactFormCity" class="contactFormSelect">
+                        <option value="" selected disabled>---</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormMail" class="contactFormLabel">メールアドレス<span class="required">*必須</span></label>
+                    <input id="contactFormMail" type="email" class="contactFormInput" placeholder="例)abcd123@example.com" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormTel" class="contactFormLabel">電話番号<span class="optional">*任意</span></label>
+                    <input id="contactFormTel" type="tel" class="contactFormInput" placeholder="例)09012345678">
+                </div>
+                <input type="submit" class="contactFormSubmit" value="送信">
+            </form>
+        </section>
     </article>
 
     <!-- script -->
