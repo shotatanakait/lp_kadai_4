@@ -150,6 +150,18 @@ header {
   display: block;
 }
 
+/* thanks */
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.thanksText {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
 /* tablet */
 @media screen and (max-width: 768px) {
 }
