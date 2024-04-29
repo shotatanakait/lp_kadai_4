@@ -1,0 +1,179 @@
+/* 共通 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* header */
+header {
+  background-color: #308ce24d;
+  position: fixed;
+  width: 100%;
+}
+.headerInner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+.siteTitleLink {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.navListItem {
+  font-size: 1.4rem;
+}
+.navListLink {
+  color: #fff;
+}
+/* humburger menu */
+.humburgerMenuButton {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  display: none;
+}
+.bar {
+  display: block;
+  background-color: #fff;
+  width: 30px;
+  height: 2px;
+}
+
+/* firstView */
+.firstView {
+  background-image: url(../img/kv.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstViewTitle {
+  font-size: 4.2rem;
+  font-weight: normal;
+}
+
+/* service */
+.serviceSection {
+  margin: 2rem;
+}
+.serviceSectionTitle {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.serviceCategory {
+  margin: 0 auto;
+  max-width: 980px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* serviceBox */
+.serviceBox {
+  padding: 1.4rem 0;
+  width: 240px;
+  border: 1px solid #222;
+}
+.serviceBox:hover {
+  cursor: pointer;
+}
+.serviceBox1.active,
+.serviceBox1:hover {
+  background-color: #b3ffff;
+  transition: 0.3s;
+}
+.serviceBox2.active,
+.serviceBox2:hover {
+  background-color: #ffdea0;
+  transition: 0.3s;
+}
+.serviceBox3.active,
+.serviceBox3:hover {
+  background-color: #a7ff99;
+  transition: 0.3s;
+}
+/* serviceTitle */
+.serviceTitle {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+}
+/* serviceDescription */
+.serviceDescription {
+  max-width: calc((240px * 3) + (2rem * 2));
+  margin: 2rem auto 0;
+  border: 1px solid #222;
+}
+.serviceDescriptionText {
+  padding: 4px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  height: 100px;
+  display: none;
+}
+.serviceDescriptionText.active {
+  display: block;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .siteNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navList {
+    display: none;
+  }
+  .humburgerMenuButton {
+    display: flex;
+  }
+  .firstViewTitle {
+    font-size: 2.8rem;
+  }
+  .serviceCategory {
+    flex-direction: column;
+    align-items: center;
+  }
+  .serviceBox {
+    width: 100%;
+  }
+}
