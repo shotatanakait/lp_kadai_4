@@ -107,4 +107,18 @@ $(function() {
             $('.navList').slideToggle(300);
         }
     });
+
+    // NAVIGATION LINK CLICK EVENT
+    $('.navListItem a').click(function() {
+        if ($('#humburgerMenuButton').hasClass('closeMenuButton')) {
+            $('#humburgerMenuButton').removeClass('closeMenuButton');
+            $('.navList').slideToggle(300, function() {
+                $(this).removeAttr('style');
+            });
+        } else {
+            $('#humburgerMenuButton').addClass('closeMenuButton');
+        $('.navList').slideToggle(300);
+        }
+        window.location.href = $(this).attr('href');
+    });
 });
