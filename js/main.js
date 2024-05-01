@@ -94,4 +94,17 @@ $(function() {
             $('select[name="city"]').append(`<option value="${city}">${city}</option>`);
         });
     });
+
+    // HUMBURGER MENU CLICK EVENT
+    $("#humburgerMenuButton").click(function () {
+        if ($(this).hasClass('closeMenuButton')) {
+            $(this).removeClass('closeMenuButton');
+            $('.navList').slideToggle(300, function() {
+                $(this).removeAttr('style');
+            });
+        } else {
+            $(this).addClass('closeMenuButton');
+            $('.navList').slideToggle(300);
+        }
+    });
 });
