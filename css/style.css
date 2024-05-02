@@ -296,8 +296,6 @@ header {
     position: absolute;
     top: -37px;
     right: 12px;
-    /*
-    */
   }
   .closeMenuButton > .barTop {
     transform: rotate(45deg) translate(4px, 8px);
@@ -323,5 +321,13 @@ header {
   }
   .contactForm {
     width: 100%;
+  }
+  .thanks {
+    margin: 0 2rem;
+  }
+  .thanksText {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
   }
 }
