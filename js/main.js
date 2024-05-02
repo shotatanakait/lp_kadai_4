@@ -126,4 +126,13 @@ $(function() {
             scrollTop: $($(this).attr('href')).offset().top
         }, 300);
     });
+
+    // WINDOW RESIZE EVENT
+    $(window).resize(function() {
+        if ($(window).width() > 480 && $('.navList').attr('style')) {
+            $('.navList').attr('style', 'display: flex !important;');
+        } else if ($(window).width() <= 480 && $('.navList').attr('style')) {
+            $('.navList').attr('style', 'display: block !important;');
+        }
+    });
 });
