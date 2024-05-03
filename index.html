@@ -67,7 +67,7 @@
         <!-- contact -->
         <section id="contact" class="contactSection">
             <h1 class="contactSectionTitle">お問い合わせ</h1>
-            <form action="./thanks.html" class="contactForm">
+            <form action="./thanks.html" class="contactForm" id="contactForm">
                 <div class="formGroup">
                     <label for="contactFormName" class="contactFormLabel">お名前<span class="required">*必須</span></label>
                     <input name="name" id="contactFormName" type="text" class="contactFormInput" placeholder="例)田中 太郎" required>
@@ -93,7 +93,8 @@
                 </div>
                 <div class="formGroup">
                     <label for="contactFormTel" class="contactFormLabel">電話番号<span class="optional">*任意</span></label>
-                    <input id="contactFormTel" type="tel" class="contactFormInput" placeholder="例)09012345678">
+                    <input id="contactFormTel" name="tel" type="tel" class="contactFormInput" placeholder="例)09012345678">
+                    <span class="errorMessage" id="errorMessage"></span>
                 </div>
                 <input type="submit" class="contactFormSubmit" value="送信">
             </form>
