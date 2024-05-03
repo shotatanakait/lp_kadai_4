@@ -135,4 +135,30 @@ $(function() {
             $('.navList').attr('style', 'display: block !important;');
         }
     });
+
+    // SUBMIT BUTTON CLICK EVENT
+    $('#contactForm').submit(function() {
+        const tel = $('input[name="tel"]').val();
+        // 空白を許容
+        if (tel === '') {
+            return true;
+        }
+        // 数値以外の入力
+        if (isNaN(tel)) {
+            $('#errorMessage').text('電話番号は数値で入力してください。');
+            $('#errorMessage').css('color', '#ff0000');
+            return false;
+        }
+        // 11文字以外の入力
+        if (tel.length !== 11) {
+            $('#errorMessage').text('電話番号は11文字で入力してください。');
+            $('#errorMessage').css('color', '#ff0000');
+            return false;
+        }
+    });
+
+    // FOCUS EVENT
+    $('input[name="tel"]').focus(function() {
+        $('#errorMessage').text('');
+    });
 });
